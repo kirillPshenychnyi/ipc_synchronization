@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.14)
+project(ipc_synchronization)
+
+add_executable(shared_memory_writer shared_memory_writer.c)
+add_executable(shared_memory_reader shared_memory_reader.c)
+add_executable(orchestrator orchestrator.c)
+
+target_link_libraries(shared_memory_writer pthread)
+target_link_libraries(shared_memory_reader pthread)
+target_link_libraries(orchestrator pthread)

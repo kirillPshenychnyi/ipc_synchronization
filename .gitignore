@@ -1,0 +1,12 @@
+// Directories
+.idea/
+CMakeFiles/
+cmake-build-debug/
+
+//build files
+Makefile
+CMakeCache.txt
+cmake_install.cmake
+greeter_server
+hello_pb2.py
+hello_pb2_grpc.py
